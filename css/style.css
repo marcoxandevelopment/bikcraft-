@@ -1,0 +1,15 @@
+* {
+  border: none;
+  overflow: auto;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
