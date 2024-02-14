@@ -18,13 +18,13 @@ a {
   gap: 2rem;
 }
 
-.flex-letter {
+.font-1-l {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
-.flex-letter a {
+.font-1-l a {
   color: var(--cor-00);
   padding: 2rem 0rem;
   font-family: Poppins;
@@ -35,7 +35,7 @@ a {
   position: relative;
 }
 
-.flex-letter a::after {
+.font-1-l a::after {
   content: "";
   position: absolute;
   display: block;
@@ -43,29 +43,31 @@ a {
   width: 0;
   background: var(--cor-00);
   margin-top: 0.02 rem;
+
   transition: 0.4s;
 }
 
-.flex-letter a:hover:after {
+.font-1-l a:hover:after {
   width: 100%;
+  color: var(--cor-p1);
 }
 
 @media screen and (max-width: 800px) {
-  .flex-letter a {
+  .font-1-l a {
     background-color: var(--bg-02);
     padding: 0.7rem 0.9rem;
     border-radius: 0.3rem;
   }
-  .flex-letter a:hover {
+  .font-1-l a:hover {
     background-color: #2e2e2e;
   }
-  .flex-letter a:after {
+  .font-1-l a:after {
     display: none;
   }
 }
 
 @media (max-width: 600px) {
-  .flex-letter a {
+  .font-1-l a {
     font-size: 0.925rem;
   }
 }

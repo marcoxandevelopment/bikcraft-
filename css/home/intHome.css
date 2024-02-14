@@ -1,8 +1,8 @@
 .int-bg {
-  background: var(--bg-01);
-  color: var(--cor-00);
+  background: #000;
+  color: #fff;
   padding-top: 1rem;
-  box-shadow: 0 102px 0 var(--cor-00);
+  box-shadow: 0 102px 0 #ffffff;
 }
 
 .int-flex {
@@ -29,16 +29,12 @@ a {
   grid-column: 2;
 }
 
-.int-conteudo h1 {
-  color: var(--cor-00);
-}
-
 .int-conteudo a:hover {
   background: linear-gradient(180deg, #e9af00 0%, #cf8b02 100%);
 }
 
 .little-point {
-  color: var(--cor-p1);
+  color: #fb0;
   font-family: Poppins;
   font-size: 4rem;
   font-style: normal;
@@ -74,12 +70,12 @@ a {
 @media screen and (max-width: 800px) {
   .int-conteudo h1,
   .little-point {
-    font-size: 2rem;
+    font-size: 3.8rem;
     margin-bottom: 0.6rem;
-    line-height: 100%;
+    line-height: 4rem;
   }
   .int-bg {
-    background: var(--bg-02);
+    background: #111111;
     box-shadow: 0 60px 0;
   }
   .int-flex {
@@ -94,5 +90,12 @@ a {
   .int-flex img {
     height: 300px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .int-conteudo h1 {
+    font-size: 2.2rem;
+    line-height: 1;
   }
 }
