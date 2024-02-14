@@ -23,26 +23,31 @@ img {
   background: #000;
 }
 
+a {
+  color: inherit;
+}
+
 .flex-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem;
+  padding: 1.825rem 1rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
 .flex-letter {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
 .flex-letter a {
   color: #ffffff;
-  padding: 1rem 0rem;
+  padding: 1rem 1rem;
   font-family: Poppins;
   font-size: 1.125rem;
   font-style: normal;
@@ -83,5 +88,129 @@ img {
 @media (max-width: 600px) {
   .flex-letter a {
     font-size: 0.925rem;
+  }
+}
+
+/* INTRODUÇÃO HOME */
+
+.int-bg {
+  background: #000;
+  color: #fff;
+  padding-top: 1rem;
+  box-shadow: 0 102px 0 #ffffff;
+}
+
+.int-flex {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 2.425rem;
+  padding: 1.825rem 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.int-conteudo {
+  align-self: end;
+  padding-bottom: 4rem;
+}
+
+.int-flex p,
+a {
+  grid-column: 1;
+}
+
+.int-flex img {
+  grid-column: 2;
+}
+
+.int-conteudo h1 {
+  color: #fff;
+  font-family: Poppins;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.int-conteudo p {
+  color: #b2b2b2;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 2.1rem; /* 150% */
+}
+
+.int-conteudo a {
+  display: inline-flex;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  color: #320;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem; /* 133.333% */
+  border-radius: 0.3125rem;
+  background: linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.int-conteudo a:hover {
+  background: linear-gradient(180deg, #e9af00 0%, #cf8b02 100%);
+}
+
+.little-point {
+  color: #fb0;
+  font-family: Poppins;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.5rem;
+}
+
+.int-flex img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.int-img {
+  margin-bottom: -8.25rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .int-conteudo h1,
+  .little-point {
+    font-size: 3rem;
+  }
+  .int-conteudo p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .int-conteudo h1,
+  .little-point {
+    margin-bottom: 0.6rem;
+    line-height: 100%;
+  }
+  .int-bg {
+    background: #111111;
+    box-shadow: 0 60px 0;
+  }
+  .int-flex {
+    grid-template-columns: 1fr;
+  }
+  .int-conteudo {
+    padding: 0;
+  }
+  .int-flex img {
+    height: 300px;
+    width: 100%;
   }
 }
