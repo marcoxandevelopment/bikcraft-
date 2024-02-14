@@ -1,0 +1,98 @@
+.int-bg {
+  background: var(--bg-01);
+  color: var(--cor-00);
+  padding-top: 1rem;
+  box-shadow: 0 102px 0 var(--cor-00);
+}
+
+.int-flex {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 2.1rem;
+  padding: 1rem 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.int-conteudo {
+  align-self: end;
+  padding-bottom: 4rem;
+}
+
+.int-flex p,
+a {
+  grid-column: 1;
+}
+
+.int-flex img {
+  grid-column: 2;
+}
+
+.int-conteudo h1 {
+  color: var(--cor-00);
+}
+
+.int-conteudo a:hover {
+  background: linear-gradient(180deg, #e9af00 0%, #cf8b02 100%);
+}
+
+.little-point {
+  color: var(--cor-p1);
+  font-family: Poppins;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.5rem;
+}
+
+.int-flex img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.int-img {
+  margin-bottom: -8.25rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .int-conteudo h1,
+  .little-point {
+    font-size: 3rem;
+  }
+  .int-conteudo p {
+    font-size: 1.25rem;
+  }
+  .int-conteudo a {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .int-conteudo h1,
+  .little-point {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+    line-height: 100%;
+  }
+  .int-bg {
+    background: var(--bg-02);
+    box-shadow: 0 60px 0;
+  }
+  .int-flex {
+    grid-template-columns: 1fr;
+  }
+  .int-conteudo {
+    padding: 0;
+  }
+  .int-conteudo p {
+    font-size: 1.15rem;
+  }
+  .int-flex img {
+    height: 300px;
+    width: 100%;
+  }
+}
