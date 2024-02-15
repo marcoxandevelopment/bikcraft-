@@ -7,6 +7,8 @@
 /*Componentes*/
 @import url(./utils/componentes.css);
 /*Tipografia*/
-@import url(utils/tipografia.css);
+@import url(./utils/tipografia.css);
 /*Cores*/
-@import url(utils/cores.css);
+@import url(./utils/cores.css);
+/*Bicicletas Lista*/
+@import url(./bicicletas/listaBiciletas.css);

@@ -34,15 +34,15 @@
 }
 
 .font-1-m {
-  font: 400 1.125/1.5 "Poppins", Sans-Serif;
+  font: 400 1.125rem/1.5 "Poppins", Sans-Serif;
 }
 
 .font-2-l {
-  font: 400 1.5/2.25 "Roboto", Sans-Serif;
+  font: 400 1.5rem/2.25 "Roboto", Sans-Serif;
 }
 
 .font-1-l {
-  font: 400 1.5/2.25 "Poppins", Sans-Serif;
+  font: 400 1.5rem/2.25 "Poppins", Sans-Serif;
 }
 
 .font-1-l {
@@ -111,4 +111,12 @@
     padding: 0.8rem 1rem;
     font-size: 1rem;
   }
+}
+
+.font-1-xl {
+  font: 600, 2rem/2.5 "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.25;
+  font-family: "Poppins";
 }
